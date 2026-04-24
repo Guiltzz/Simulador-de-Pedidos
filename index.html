@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SimuladorPedido</title>
+</head>
+<body>
+    <!-- container principal da pagina -->
+    <div class="container"
+    <h1> Simulador de Pedido do TDS2261T</h1>
+    <!--Subtitulo-->
+    <p class="Subtitulo">
+        Bem vindo a lacheria do TDS
+    </p>
+    <!--Area que contem os produtos-->
+    <div class="Cards">
+        
+    <!--CARD = UM PRODUTO-->
+    <!--Usamos label para criar no card marque checkbox-->
+    <label class="card">
+        <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="Hamburguer"">
+        <!--Imagem do produto-->
+            <img src="Assents/Hamburguer.png" alt="Hamburguer">
+            <!--Nome do produto-->
+            <h2>Hamburguer</h2>
+            <!--Descrição-->
+            <p>Pao,Carne,Queijo,Alface,
+                Tomate,Cebola</p>
+            <!--Preço-->
+            <span>R$30,00</span>
+    </label>
+    <label class="card">
+        <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="Batata Frita"">
+        <!--Imagem do produto-->
+            <img src="Assents/batatafrita-png.webp" alt="Batata Frita">
+            <!--Nome do produto-->
+            <h2>Batata Frita</h2>
+            <!--Descrição-->
+            <p>Batata crocante</p>
+            <!--Preço-->
+            <span>R$15,00</span>
+    </label>
+    <label class="card">
+        <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="Nuggets"">
+        <!--Imagem do produto-->
+            <img src="Assents/Nuggets.png" alt="Nuggets">
+            <!--Nome do produto-->
+            <h2>Nuggets</h2>
+            <!--Descrição-->
+            <p>Nuggets cocrante</p>
+            <!--Preço-->
+            <span>R$15,00</span>
+    </label>
+    <label class="card">
+        <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id=" Refrigerante"">
+        <!--Imagem do produto-->
+            <img src="Assents/coca.png" alt="Refrigerante">
+            <!--Nome do produto-->
+            <h2>Coca cola </h2>
+            <!--Descrição-->
+            <p>Coca gelada</p>
+            <!--Preço-->
+            <span>R$10,00</span>
+    </label>
+    </div>
+    <!--Botao que chama uma funçao calcular() para somar o pedido-->
+    <button onclick="calcular()">Calcular Pedido</button>
+    <div id="resultado" class="resultado"></div>
+    </div>
+</body>
+</html>
